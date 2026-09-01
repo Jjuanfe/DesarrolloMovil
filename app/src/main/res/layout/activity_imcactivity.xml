@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calculadora de IMC"
+        android:text="@string/titulo_calculadora"
         android:textSize="26sp"
         android:textStyle="bold"
         android:layout_marginBottom="32dp" />
@@ -18,7 +18,7 @@
         android:id="@+id/etPeso"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
-        android:hint="Peso (kg)"
+        android:hint="@string/placeholder_peso"
         android:inputType="numberDecimal"
         android:layout_marginBottom="16dp" />
 
@@ -26,7 +26,7 @@
         android:id="@+id/etAltura"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
-        android:hint="Altura (m). Ej: 1.75"
+        android:hint="@string/place_holder_altura"
         android:inputType="numberDecimal"
         android:layout_marginBottom="24dp" />
 
@@ -34,7 +34,7 @@
         android:id="@+id/btnCalcularImc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calcular"
+        android:text="@string/calcular"
         android:layout_marginBottom="24dp" />
 
     <TextView
@@ -51,7 +51,7 @@
         android:id="@+id/btnVolverMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Volver al Menú"
+        android:text="@string/menu"
         android:textSize="14sp" />
 
 </LinearLayout>

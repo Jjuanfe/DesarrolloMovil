@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Menú Principal"
+        android:text="@string/titulo"
         android:textSize="26sp"
         android:textStyle="bold"
         android:layout_marginBottom="40dp" />
@@ -18,7 +18,7 @@
         android:id="@+id/btnIrJuego"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
-        android:text="Jugar Tres en Raya"
+        android:text="@string/jugar"
         android:textSize="16sp"
         android:layout_marginBottom="16dp" />
 
@@ -26,7 +26,7 @@
         android:id="@+id/btnIrImc"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
-        android:text="Calcular IMC"
+        android:text="@string/IMC"
         android:textSize="16sp"
         android:layout_marginBottom="16dp" />
 
@@ -34,7 +34,7 @@
         android:id="@+id/btnIrPresentacion"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
-        android:text="Presentación Personal"
+        android:text="@string/presentacion"
         android:textSize="16sp" />
 
 </LinearLayout>

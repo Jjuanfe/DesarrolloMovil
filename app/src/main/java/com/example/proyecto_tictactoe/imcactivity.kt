@@ -7,8 +7,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
-// Calculadora básica de IMC (Índice de Masa Corporal).
-// Formula: IMC = peso (kg) / (altura (m) * altura (m))
+
 class ImcActivity : AppCompatActivity() {
 
     private lateinit var etPeso: EditText
@@ -27,6 +26,11 @@ class ImcActivity : AppCompatActivity() {
         btnCalcularImc.setOnClickListener {
             calcularImc()
         }
+        val btnVolverMenu: Button = findViewById(R.id.btnVolverMenu)
+        btnVolverMenu.setOnClickListener {
+            finish()
+        }
+
     }
 
     private fun calcularImc() {

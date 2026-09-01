@@ -9,10 +9,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import kotlin.random.Random
 
-// NOTA: esta clase es tu antigua "MainActivity". Se renombró a TicTacToeActivity
-// porque ahora MenuActivity es la pantalla de inicio (launcher) de la app.
-// La lógica del juego NO cambió, solo el nombre de la clase y el hecho de
-// que ya no es la actividad "principal" del manifest.
+
 class TicTacToeActivity : AppCompatActivity() {
     companion object {
         private const val PREFS_NOMBRE = "TicTacToePrefs"
@@ -67,6 +64,11 @@ class TicTacToeActivity : AppCompatActivity() {
         btnReiniciar.setOnClickListener {
             reiniciarJuego()
         }
+        val btnVolverMenu: Button = findViewById(R.id.btnVolverMenu)
+        btnVolverMenu.setOnClickListener {
+            finish() // cierra esta actividad y regresa al MenuActivity
+        }
+
     }
 
     private fun botonPresionado(boton: Button, fila: Int, columna: Int) {

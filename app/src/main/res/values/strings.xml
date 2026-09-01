@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Proyecto_TicTacToe</string>
+    <string name="titulo">Bienvenido</string>
+    <string name="jugar">Jugar Tres en Raya</string>
+    <string name="IMC">Calcular IMC</string>
+    <string name="presentacion">Sobre Nosotros</string>
+    <string name="turno">Tu Turno</string>
+    <string name="menu">Volver al Menú</string>
+    <string name="reiniciar">Reiniciar Juego</string>
+    <string name="titulo_calculadora">Calculadora de IMC</string>
+    <string name="placeholder_peso">Peso (Kg)</string>
+    <string name="calcular">Calcular</string>
+    <string name="place_holder_altura">Altura (m) Ej: 1.75</string>
 </resources>

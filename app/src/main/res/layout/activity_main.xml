@@ -10,7 +10,7 @@
         android:id="@+id/tvTurno"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Turno de: X"
+        android:text="@string/turno"
         android:textSize="28sp"
         android:textStyle="bold"
         android:layout_marginBottom="8dp" />
@@ -51,7 +51,7 @@
         android:id="@+id/btnReiniciar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Reiniciar Juego"
+        android:text="@string/reiniciar"
         android:layout_marginTop="32dp"
         android:textSize="18sp" />
 
@@ -59,7 +59,7 @@
         android:id="@+id/btnVolverMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Volver al Menú"
+        android:text="@string/menu"
         android:layout_marginTop="12dp"
         android:textSize="14sp" />
 

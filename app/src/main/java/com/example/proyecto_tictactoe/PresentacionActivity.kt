@@ -8,13 +8,13 @@ import android.widget.ListView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
-// Modelo simple: cada "tarjeta" de presentación tiene nombre, descripción y contacto.
+
 data class PersonaInfo(
     var nombre: String,
     var descripcion: String,
     var contacto: String
 ) {
-    // Así se ve cada elemento en el ListView.
+
     override fun toString(): String {
         return "$nombre\n$descripcion — $contacto"
     }
@@ -27,14 +27,13 @@ class PresentacionActivity : AppCompatActivity() {
     private lateinit var etContacto: EditText
     private lateinit var lvPresentacion: ListView
 
-    // Lista en memoria con todas las personas agregadas.
+
     private val listaPersonas = ArrayList<PersonaInfo>()
 
-    // Adapter que conecta listaPersonas con el ListView visual.
+
     private lateinit var adapter: ArrayAdapter<PersonaInfo>
 
-    // Guarda qué elemento de la lista está seleccionado (-1 = ninguno).
-    // Se usa para saber cuál editar o borrar.
+
     private var posicionSeleccionada = -1
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -57,8 +56,12 @@ class PresentacionActivity : AppCompatActivity() {
         btnEditar.setOnClickListener { editarPersona() }
         btnBorrar.setOnClickListener { borrarPersona() }
 
-        // Al tocar un elemento de la lista, se cargan sus datos en los campos
-        // para poder editarlo o borrarlo.
+        val btnVolverMenu: Button = findViewById(R.id.btnVolverMenu)
+        btnVolverMenu.setOnClickListener {
+            finish()
+        }
+
+
         lvPresentacion.setOnItemClickListener { _, _, posicion, _ ->
             posicionSeleccionada = posicion
             val persona = listaPersonas[posicion]

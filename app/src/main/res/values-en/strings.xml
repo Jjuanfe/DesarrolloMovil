@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Proyect_TicTacToe</string>
+    <string name="saludo">Hello WORLD</string>
+    <string name="text_btn_enviar">Submit</string>
+    <string name="titulo">Welcome</string>
+
+    <string name="jugar">Play Tic Tac Toe</string>
+    <string name="IMC">Calculate your IMC</string>
+    <string name="presentacion">About Us</string>
+    <string name="turno">Your Turn</string>
+    <string name="menu">Back to Menu</string>
+    <string name="reiniciar">Reset Game</string>
+    <string name="titulo_calculadora">IMC Calculator</string>
+    <string name="placeholder_peso">Weight (Kg)</string>
+    <string name="calcular">Resolve</string>
+    <string name="place_holder_altura">Height (m) Ej: 1.75</string>
+</resources>
