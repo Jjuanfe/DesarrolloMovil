@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvTurno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turno de: X"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvContador"
+        android:text="X: 0 | O: 0"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3">
+
+        <Button android:id="@+id/btn00" android:layout_width="90dp" android:layout_height="90dp" android:textSize="36sp" android:layout_margin="4dp"/>
+        <Button android:id="@+id/btn01" android:layout_width="90dp" android:layout_height="90dp" android:textSize="36sp" android:layout_margin="4dp"/>
+        <Button android:id="@+id/btn02" android:layout_width="90dp" android:layout_height="90dp" android:textSize="36sp" android:layout_margin="4dp"/>
+
+        <Button android:id="@+id/btn10" android:layout_width="90dp" android:layout_height="90dp" android:textSize="36sp" android:layout_margin="4dp"/>
+        <Button android:id="@+id/btn11" android:layout_width="90dp" android:layout_height="90dp" android:textSize="36sp" android:layout_margin="4dp"/>
+        <Button android:id="@+id/btn12" android:layout_width="90dp" android:layout_height="90dp" android:textSize="36sp" android:layout_margin="4dp"/>
+
+        <Button android:id="@+id/btn20" android:layout_width="90dp" android:layout_height="90dp" android:textSize="36sp" android:layout_margin="4dp"/>
+        <Button android:id="@+id/btn21" android:layout_width="90dp" android:layout_height="90dp" android:textSize="36sp" android:layout_margin="4dp"/>
+        <Button android:id="@+id/btn22" android:layout_width="90dp" android:layout_height="90dp" android:textSize="36sp" android:layout_margin="4dp"/>
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btnReiniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reiniciar Juego"
+        android:layout_marginTop="32dp"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnVolverMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver al Menú"
+        android:layout_marginTop="12dp"
+        android:textSize="14sp" />
+
+</LinearLayout>

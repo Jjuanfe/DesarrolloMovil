@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Proyecto_TicTacToe">
+        <!-- IMPORTANTE: cambia android:theme arriba por el nombre real
+             de tu tema, definido en res/values/themes.xml -->
+
+        <!-- Esta es ahora la pantalla de inicio de la app -->
+        <activity
+            android:name=".MenuActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".TicTacToeActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ImcActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".PresentacionActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
